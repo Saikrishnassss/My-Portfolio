@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadhanala Sai Krishna - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Hello, I'm Sadhanala Sai Krishna!</h1>
+            <p>Crafting innovative solutions and passionate about pushing the boundaries of technology.</p>
+            <a href="#projects" class="btn">Explore My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <!-- Show only the first two lines initially -->
+            <p id="about-me-short">
+                Hello! I’m Sai Krishna, a 3rd-year Computer Science and Engineering (CSE) student at Sathyabama University, Chennai. Currently, I maintain a CGPA of 7.2, and I am constantly striving to improve both my academic and technical skills.
+            </p>
+            
+            <p id="about-me-long" style="display: none;">
+                As an aspiring Software Development Engineer, I have a strong passion for creating innovative software solutions that solve real-world problems. My interest in software development is driven by my love for coding, problem-solving, and building efficient systems. I’m particularly drawn to the challenge of optimizing code, working with cutting-edge technologies, and delivering products that add value to users.
+                Alongside my enthusiasm for software development, I am also deeply interested in Cybersecurity. With the ever-growing number of online threats, I believe it is essential to build secure and robust systems. I am constantly exploring various aspects of cybersecurity, from ethical hacking to cryptography, and I aim to contribute to making the digital world a safer place.
+                Throughout my academic journey, I have worked on various projects that helped me apply my knowledge in practical scenarios. Whether it's coding in languages like Python, Java, or C++, or exploring web development technologies like HTML, CSS, and JavaScript, I am always looking for opportunities to learn and grow. I enjoy collaborating with others on projects and believe in the power of teamwork and knowledge sharing.
+                I am excited about the future and the endless possibilities that technology holds. My goal is to continue learning, improving my skills, and working on impactful projects that have a meaningful impact on society. I am eager to take on new challenges and contribute to the ever-evolving tech industry!
+            </p>
+    
+            <!-- Button that triggers the 'Read More' functionality -->
+            <button id="read-more-btn" class="btn">Read More</button>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-6 project">
+                    <h3>Project Title 1</h3>
+                    <p>This repository contains a project dedicated to predicting sales of online video games using data analytics and machine learning. The objective is to provide valuable insights into sales trends, aiding developers and marketers in making informed decisions within the competitive gaming industry.</p>
+                    <a href="https://github.com/Saikrishnassss/Online-Video-Games-Sales-Prediction" target="_blank" class="btn">View on GitHub</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-6 project">
+                    <h3>Project Title 2</h3>
+                    <p>This repository contains a project focused on predicting the risk of cardiovascular diseases using machine learning techniques. The goal is to provide healthcare professionals and researchers with tools to identify at-risk individuals, ultimately aiding in early intervention and prevention strategies.</p>
+                    <a href="https://github.com/Saikrishnassss/Cardio-Vascular-Prediction" target="_blank" class="btn">View on GitHub</a>
+                
+        </div>
+    </section>
+    
+    <script>
+        // JavaScript to toggle visibility of additional content and change button text
+        const readMoreBtn = document.getElementById('read-more-btn');
+        const aboutMeLong = document.getElementById('about-me-long');
+        
+        // Add event listener to the button
+        readMoreBtn.addEventListener('click', function() {
+            // Toggle the display of the additional content
+            if (aboutMeLong.style.display === 'none') {
+                aboutMeLong.style.display = 'block';
+                readMoreBtn.textContent = 'Read Less'; // Change button text when content is shown
+            } else {
+                aboutMeLong.style.display = 'none';
+                readMoreBtn.textContent = 'Read More'; // Change button text back when content is hidden
+            }
+        });
+    </script>
+
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>DBMS</li>
+                <li>C/C++</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Social Links (LinkedIn and GitHub) moved above Footer -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/saikrishnasadhanala/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Saikrishnassss" target="_blank">GitHub</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Sadhanala Sai Krishna. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
